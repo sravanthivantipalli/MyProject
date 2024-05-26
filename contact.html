@@ -1,0 +1,137 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact form</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <style>
+        body{
+            background-image: url(a.jpg);
+            background-size: cover;
+            background-color: pink;
+            font-family: 'outfit';
+        }
+        .contact-container{
+            height:100vh;
+            display:flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+        .contact-left{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+        }
+        .contact-left-title h2{
+            font-weight:600;
+            color:rgb(133, 11, 68);
+            font-size: 40px;
+            margin-bottom: 5px;
+
+        }
+        .contact-left-title hr{
+            border:none;
+            width:100px;
+            height:5px;
+            padding-left: 20px;
+            background-color:rgb(133, 11, 68);
+            border-radius: 5px ;
+            border-style:hidden;
+            margin-bottom: 20px;
+            margin-left: 8px;
+           
+        }
+        .contact-inputs{
+            width: 400px;
+            height: 50px;
+            border: none;
+            outline:none;
+            padding-left: 25px;
+            font-weight: 500;
+            color: black;
+            border-radius: 50px;
+        }
+        .contact-left textarea{
+            height: 100px;
+            padding-top: 15px;
+            border-radius: 20px;
+        }
+        .contact-inputs:focus{
+            border: 2px solid;
+            border-color: #AC3B61;
+            border-radius: 10px;
+        }
+        .contact-inputs::placeholder{
+            color:#AC3B61;
+        }
+        .contact-left button{
+            display:flex;
+            align-items: center;
+            padding:15px 30px;
+            font-size: 16px;
+            gap:10px;
+            border:none;
+            border-radius: 50px;
+            background-color:aliceblue;
+            color: #AC3B61;
+            cursor: pointer;
+            transition: 0.6s ease-in-out;
+            
+
+
+        }
+        .contact-left button:hover{
+            background-color: #AC3B61;
+            color:white
+    
+        }
+        .go{
+            padding-inline-end: 200px;
+            padding-right: 1200px;
+            font-size: 20px;
+            text-decoration: none;
+            text-align: center;
+            background-color: white;
+            border-radius: 15px;
+            padding: 5px 20px;
+            color:#AC3B61;
+            transition: 0.6s ease-in-out;
+            float: left;
+
+            
+        }
+        .go:hover{
+            color:white;
+            background-color: #AC3B61;
+        }
+         
+
+
+
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <form action="" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get In Touch</h2>
+                <hr>
+            </div>
+            <input type="text" name="name" placeholder="your name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="your email" class="contact-inputs" required>
+            <textarea name="message" placeholder="your message" class="contact-inputs" required></textarea>
+
+            <button type="submit">submit</button>
+
+            <div class="hello">
+            <div style="text-align:center; padding-right: 500px;">
+                <a class="go" style="padding-right: 20px;" href="C:\Users\SAIKIRAN\OneDrive\Desktop\html\WEBSITE\WEBSITE.html">go back</a>
+            </div>
+            </div>
+        </form>
+    
+    </div>
+</body>
+</html>
